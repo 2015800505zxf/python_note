@@ -1,0 +1,22 @@
+区分命令行模式与python交互模式
+命令行模式的提示符类似于  C:\>
+在命令行下敲python就会进入到python交互模式，他的提示符是>>>，在python交互模式下敲exit() 就会推出python交互模式
+
+注：在python交互模式下可执行python hello.py 去运行一个 .py 文件
+        在命令行模式下只要.py， 不能向在python交互模式下去执行 python hello.py,  如果执行就会提示没有这个文件，要切换到此文件的所在的目录下 “ cd  '目录'”在执行python hello.py
+
+注： 文件在保存的时候要加后缀名 .py， 且名字只能为英文，数字，下划线的组合
+
+1、print()//用单引号或者双引号的是字符串
+      如果是计算的的话就不用引号 例如print(100+200+300)
+      pritnt("hello, world"), 不加引号就会提示错误
+2、两个字符串的连接
+      print("hello, world", "hi zhangxiaofei")   --> hello, world hi zhangxiaofei
+      中间的 ,  就变成可空格 这是字符串之间的连接。
+      print("hello, world", "","","","hi zhangxiaofei") 这样就会输出多个空格
+      但是 -->print("hello, world", ",",",",",","hi zhangxiaofei") 这样就会输出 , 
+      print('100 + 200 =', 100+200)  100 + 200 = 300 也会有空格
+3、print() 只能输出我们想要的结果， 如果要输出变量 可以用 input()
+      例如： >>> name = input()  然后输入名字 zhangxiaofei (回车)  >>>name (回车) 就能输出 zhangxiaofei 
+
+
